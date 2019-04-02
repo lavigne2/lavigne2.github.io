@@ -1,0 +1,266 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+html {
+  background: linear-gradient(45deg, #ff8189, #fffbf7);
+  height: auto !important;
+}
+body {
+  background: transparent;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* 전체 쉐도우 */
+
+header #header-bar>.row,
+#main .menu-wrapper,
+#main #main-content>div.frame {
+  box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 로고밑 NAV bar */
+
+header #header-bar>.row {
+  border-top: 4px solid #F92A82;
+  border-right: none;
+  border-bottom: none;
+}
+
+/* 헤더 배너 */
+
+header .row>div:nth-child(1)>a {
+  display: block;
+  width: 145px;
+  height: 50px;
+  background: url(https://upload.tgd.kr/20180718/cb071c9e4b555f7acd2b0393a1422171.png) no-repeat;
+  background-size: auto 50px;
+}
+
+header .row>div:nth-child(1)>a>img {
+  display: none;
+	
+	filter: grayscale(100%);
+  opacity: 0.8;
+}
+
+/* 검색폼 보더 */
+
+header #right-search-form>input[type='text'] {
+  border: 3px solid #F13030;
+}
+
+/* 트게더 전체메뉴 / 유용한링크 / 트위치 스케쥴 */
+
+#main .menu-wrapper>.header {
+  background: #F92A82;
+}
+
+.fa-navicon:before,
+.fa-reorder:before,
+.fa-bars:before {
+  color: white;
+}
+
+.fa-square:before {
+  color: #F92A82;
+}
+
+header #header-bar>.row,
+#main .menu-wrapper,
+#main #main-content>div.frame {
+  border-right: none;
+  border-bottom: none;
+}
+
+#main .menu-wrapper {
+  border: none;
+}
+
+/* 헤더 검색 버튼 */
+
+header #right-search-form>#right-search-btn {
+  color: #F13030;
+}
+
+/* 헤더 [광고]배경색 */
+
+header #header-bar #header-top-notice strong.notice-badge {
+  background: #ED7B84;
+}
+
+/* fa색상 */
+
+header #header-bar .fa {
+  color: #F13030;
+}
+
+/* 스트리머 게시판 상단 정보 글씨색상 */
+
+#board-info #board-info-bottom a {
+  color: #ED7B84;
+}
+
+/* 좌측메뉴 숏컷링크 글씨 색상 */
+
+#main .menu-wrapper>a>em {
+  color: #F92A82;
+}
+
+/* 좌측메뉴 메뉴사이의 공간 색상 */
+
+#main .menu-wrapper .spacer {
+  background: #F92A82;
+  height: 0.15em;
+}
+
+/* 게시글 관련부분 */
+
+#article-list>.article-list-row>.item>.list-title>.list-writer>span {
+  width: 120px !important;
+}
+
+#article-list #article-list-category {
+  border-top: 2px solid #ED7B84;
+  background: white;
+}
+
+#article-list #article-list-category>a {
+  background: white;
+}
+
+#article-list>.article-list-row>.item>.list-header>span {
+  background-color: #ED7B84;
+}
+
+#article-list>.article-list-row>.item>.list-title>small.comment-count {
+  color: #ED7B84;
+}
+
+#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
+  color: #ED7B84;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+  background-color: #ED7B84;
+  border-color: #ED7B84;
+}
+
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover {
+  color: #ED7B84;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+  color: #ED7B84;
+}
+
+#article-content-wrapper>.header {
+  border-top: 2px solid #ED7B84;
+}
+
+#article-reply-area #reply-real-area .reply>.reply-header>.reply-writer.logged,
+#article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged {
+  color: #ED7B84;
+}
+
+#article-info>h2 {
+  font-weight: bold;
+}
+
+#article-info>h2>span.category {
+  color: #ED7B84 !important;
+}
+
+#article-reply-area>.header h5 {
+  color: #ED7B84;
+}
+
+#main .menu-wrapper>a {
+  padding: 0.5em 1.4em 0.5em 0.7em !important;
+}
+
+a {
+  color: #ED7B84;
+}
+
+span.a-badge i.fa.fa-info-circle {
+  color: #F92A82;
+}
+
+/* footer */
+
+#article-list>.article-list-row {
+  border-right: none;
+}
+
+#article-list #article-list-menu {
+  box-sizing: border-box;
+  width: unset;
+  margin: 20px;
+}
+
+#article-list #boardSearchForm {
+  padding-bottom: 20px;
+  height: unset;
+}
+
+.btn-primary {
+  background: #F13030 !important;
+}
+
+/* 상단 게시글 색상 */
+#article-list #article-list-category {
+  /* border-top: 2px solid  #F92A82; */
+  border-top: none !important;
+  background:  #F92A82;
+}
+
+#article-list>#article-list-category>a:first-child {
+}
+
+#article-list #article-list-category>a {
+  background:  #F92A82 !important;
+  color: white !important;;
+}
+
+/* 공지 색상 */
+.notice {
+  background: #fcffb7 !important;
+}
+
+/* 민블리 이름 */
+#board-info h1>a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #F92A82;
+}
+
+/* 상주인원 */
+#viewers:before {
+    color: #F92A82;
+    font-size: 15px;
+    font-weight: bold;
+    content: "자두 ";
+}
+
+#board-info #viewers-area {
+    font-size: 15px;
+    color: #F92A82;
+    font-weight: bold;
+    vertical-align: middle;
+    line-height: 18px;
+    display: inline-block;
+}
+
+#viewers:after {
+    color: #F92A82;
+    font-size: 15px;
+    font-weight: bold;
+    content: " 개 싸는 중";
+}
