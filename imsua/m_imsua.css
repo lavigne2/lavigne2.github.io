@@ -18,7 +18,7 @@ header > #header-search-bar #header-search-input {
     padding: 6px 8px;
     font-size: 16px;
     border: 2px solid var(--color1);
-    flex: 1
+    flex: 1;
 }
 header > #header-search-bar #header-search-btn {
     border: none;
@@ -27,7 +27,7 @@ header > #header-search-bar #header-search-btn {
     font-size: 24px;
     font-weight: bold;
     width: 54px;
-    margin-top: -1px
+    margin-top: -1px;
 }
 nav#nav{
     background: var(--color3);
@@ -36,17 +36,17 @@ nav#nav > .nav-header {
     margin-top: 12px;
     background: var(--color1);
     color: #fff;
-    padding: 6px 12px
+    padding: 6px 12px;
 }
 #header-top-notice strong.notice-badge {
     background: var(--color1);
     padding: 4px 8px;
     color: #fff;
-    font-weight: bold
+    font-weight: bold;
 }
 #article-list > .article-list-row > .item > a.list-title > .list-writer.logged > span {
     color: var(--color1);
-    font-weight: bold
+    font-weight: bold;
 }
 nav#nav > .nav-menu-area hr{
     border-bottom-color: var(--color2);
@@ -62,7 +62,7 @@ footer{
     width: 24px;
     text-align: center;
     display: inline-block;
-    font-weight: bold
+    font-weight: bold;
 }
 #article-list > .article-list-row > .item > .list-title > .list-category{
     border-left: 1px solid var(--color2);
