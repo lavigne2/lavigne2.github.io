@@ -332,6 +332,13 @@ header #header-bar #header-menu-left{
 .fr-box fr-ltr fr-basic fr-top{
     border: 2px dashed var(--color2);
 }
+#article-reply-area > .header h5{
+    color: var(--color1);
+}
+#lastc{
+    color: var(--color1);
+}
+
 
 /*아이콘*/
 header #right-search-form > #right-search-btn:after{
