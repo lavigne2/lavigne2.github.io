@@ -338,7 +338,9 @@ header #header-bar #header-menu-left{
 #lastc{
     color: var(--color1);
 }
-
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged, #article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged{
+    color: #555555;
+}
 
 /*아이콘*/
 header #right-search-form > #right-search-btn:after{
