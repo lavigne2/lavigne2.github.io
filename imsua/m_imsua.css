@@ -114,6 +114,9 @@ footer{
     background-color: var(--color2);
     border-color: var(--color2);
 }
+.pagination > li > a, .pagination > li > span{
+    color: var(--color1);
+}
 
 
 /*--------------------레이아웃--------------------*/
