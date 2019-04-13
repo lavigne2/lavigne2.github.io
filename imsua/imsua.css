@@ -353,9 +353,7 @@ header #right-search-form > #right-search-btn:after{
 }
 
 
-
-
-/*애니메이션*/
+/*-------------------애니메이션-------------------*/
 #article-list > .article-list-row{
     transition-duration: 0.25s;
 }
@@ -480,10 +478,277 @@ header #right-search-form > #right-search-btn:after{
 }
 
 
+/*-------------------이모티콘-------------------*/
+/*이모티콘 팝업*/
+.fr-popup .fr-emoticon,
+.fr-popup .fr-emoticon img {
+    width: 30px !important;
+    height: 30px !important;
+}
+.fr-popup.emoticons{
+    width: 600px;
+}
+.fr-popup.emoticons br{
+    display: none;
+}
+/*구독티콘*/
+#article-content-wrapper #article-content img[alt='suvelyNice'],
+img[alt='suvelyNice'] {
+    width: 60px;
+    height: 60px !important;
+    padding-left: 60px;
+    background: url(https://static-cdn.jtvnw.net/emoticons/v1/775643/3.0) no-repeat;
+    background-size: 60px;
+    background-position: center;
+}
+#article-content-wrapper #article-content img[alt='suvelyDelete'],
+img[alt='suvelyDelete'] {
+    width: 60px;
+    height: 60px !important;
+    padding-left: 60px;
+    background: url(https://static-cdn.jtvnw.net/emoticons/v1/798654/3.0) no-repeat;
+    background-size: 60px;
+    background-position: center;
+}
+#article-content-wrapper #article-content img[alt='suvelyPpat'],
+img[alt='suvelyPpat'] {
+    width: 60px;
+    height: 60px !important;
+    padding-left: 60px;
+    background: url(https://static-cdn.jtvnw.net/emoticons/v1/1067648/3.0) no-repeat;
+    background-size: 60px;
+    background-position: center;
+}
 
+#article-content-wrapper #article-content img[alt='suvelyBAN'],
+img[alt='suvelyBAN'] {
+    width: 60px;
+    height: 60px !important;
+    padding-left: 60px;
+    background: url(https://static-cdn.jtvnw.net/emoticons/v1/1795916/3.0) no-repeat;
+    background-size: 60px;
+    background-position: center;
+}
 
+#article-content-wrapper #article-content img[alt='suvelyMoonlight'],
+img[alt='suvelyMoonlight'] {
+    width: 60px;
+    height: 60px !important;
+    padding-left: 60px;
+    background: url(https://static-cdn.jtvnw.net/emoticons/v1/1795939/3.0) no-repeat;
+    background-size: 60px;
+    background-position: center;
+}
 
+#article-content-wrapper #article-content img[alt='suvelyHeek'],
+img[alt='suvelyHeek'] {
+    width: 60px;
+    height: 60px !important;
+    padding-left: 60px;
+    background: url(https://static-cdn.jtvnw.net/emoticons/v1/1795979/3.0) no-repeat;
+    background-size: 60px;
+    background-position: center;
+}
 
+#article-content-wrapper #article-content img[alt='suvelyPepper'],
+img[alt='suvelyPepper'] {
+    width: 60px;
+    height: 60px !important;
+    padding-left: 60px;
+    background: url(https://static-cdn.jtvnw.net/emoticons/v1/1796030/3.0) no-repeat;
+    background-size: 60px;
+    background-position: center;
+}
+
+#article-content-wrapper #article-content img[alt='suvelyMimi'],
+img[alt='suvelyMimi'] {
+    width: 60px;
+    height: 60px !important;
+    padding-left: 60px;
+    background: url(https://static-cdn.jtvnw.net/emoticons/v1/1796038/3.0) no-repeat;
+    background-size: 60px;
+    background-position: center;
+}
+
+#article-content-wrapper #article-content img[alt='suvelyBloodfist'],
+img[alt='suvelyBloodfist'] {
+    width: 60px;
+    height: 60px !important;
+    padding-left: 60px;
+    background: url(https://static-cdn.jtvnw.net/emoticons/v1/1796045/3.0) no-repeat;
+    background-size: 60px;
+    background-position: center;
+}
+
+#article-content-wrapper #article-content img[alt='suvelyTaebo'],
+img[alt='suvelyTaebo'] {
+    width: 60px;
+    height: 60px !important;
+    padding-left: 60px;
+    background: url(https://static-cdn.jtvnw.net/emoticons/v1/1796055/3.0) no-repeat;
+    background-size: 60px;
+    background-position: center;
+}
+
+#article-content-wrapper #article-content img[alt='suvelyDogeza'],
+img[alt='suvelyDogeza'] {
+    width: 60px;
+    height: 60px !important;
+    padding-left: 60px;
+    background: url(https://static-cdn.jtvnw.net/emoticons/v1/1801976/3.0) no-repeat;
+    background-size: 60px;
+    background-position: center;
+}
+
+#article-content-wrapper #article-content img[alt='suvelyNanha'],
+img[alt='suvelyNanha'] {
+    width: 60px;
+    height: 60px !important;
+    padding-left: 60px;
+    background: url(https://static-cdn.jtvnw.net/emoticons/v1/1801978/3.0) no-repeat;
+    background-size: 60px;
+    background-position: center;
+}
+
+#article-content-wrapper #article-content img[alt='suvelyQuestion'],
+img[alt='suvelyQuestion'] {
+    width: 60px;
+    height: 60px !important;
+    padding-left: 60px;
+    background: url(https://static-cdn.jtvnw.net/emoticons/v1/1801981/3.0) no-repeat;
+    background-size: 60px;
+    background-position: center;
+}
+
+#article-content-wrapper #article-content img[alt='suvelyHi'],
+img[alt='suvelyHi'] {
+    width: 60px;
+    height: 60px !important;
+    padding-left: 60px;
+    background: url(https://static-cdn.jtvnw.net/emoticons/v1/1801983/3.0) no-repeat;
+    background-size: 60px;
+    background-position: center;
+}
+
+#article-content-wrapper #article-content img[alt='suvelyByebye'],
+img[alt='suvelyByebye'] {
+    width: 60px;
+    height: 60px !important;
+    padding-left: 60px;
+    background: url(https://static-cdn.jtvnw.net/emoticons/v1/1801988/3.0) no-repeat;
+    background-size: 60px;
+    background-position: center;
+}
+
+#article-content-wrapper #article-content img[alt='suvelyHandheart'],
+img[alt='suvelyHandheart'] {
+    width: 60px;
+    height: 60px !important;
+    padding-left: 60px;
+    background: url(https://static-cdn.jtvnw.net/emoticons/v1/1801990/3.0) no-repeat;
+    background-size: 60px;
+    background-position: center;
+}
+
+#article-content-wrapper #article-content img[alt='suvelySeuk'],
+img[alt='suvelySeuk'] {
+    width: 60px;
+    height: 60px !important;
+    padding-left: 60px;
+    background: url(https://static-cdn.jtvnw.net/emoticons/v1/1801991/3.0) no-repeat;
+    background-size: 60px;
+    background-position: center;
+}
+
+#article-content-wrapper #article-content img[alt='suvelyOk'],
+img[alt='suvelyOk'] {
+    width: 60px;
+    height: 60px !important;
+    padding-left: 60px;
+    background: url(https://static-cdn.jtvnw.net/emoticons/v1/1801993/3.0) no-repeat;
+    background-size: 60px;
+    background-position: center;
+}
+
+#article-content-wrapper #article-content img[alt='suvelyFire2'],
+img[alt='suvelyFire2'] {
+    width: 60px;
+    height: 60px !important;
+    padding-left: 60px;
+    background: url(https://static-cdn.jtvnw.net/emoticons/v1/1801997/3.0) no-repeat;
+    background-size: 60px;
+    background-position: center;
+}
+
+#article-content-wrapper #article-content img[alt='suvelyAhhh'],
+img[alt='suvelyAhhh'] {
+    width: 60px;
+    height: 60px !important;
+    padding-left: 60px;
+    background: url(https://static-cdn.jtvnw.net/emoticons/v1/1802001/3.0) no-repeat;
+    background-size: 60px;
+    background-position: center;
+}
+
+#article-content-wrapper #article-content img[alt='suvelyBiblethump'],
+img[alt='suvelyBiblethump'] {
+    width: 60px;
+    height: 60px !important;
+    padding-left: 60px;
+    background: url(https://static-cdn.jtvnw.net/emoticons/v1/1802003/3.0) no-repeat;
+    background-size: 60px;
+    background-position: center;
+}
+
+#article-content-wrapper #article-content img[alt='suvelyTranquility'],
+img[alt='suvelyTranquility'] {
+    width: 60px;
+    height: 60px !important;
+    padding-left: 60px;
+    background: url(https://static-cdn.jtvnw.net/emoticons/v1/1802010/3.0) no-repeat;
+    background-size: 60px;
+    background-position: center;
+}
+
+#article-content-wrapper #article-content img[alt='suvelySmilingly'],
+img[alt='suvelySmilingly'] {
+    width: 60px;
+    height: 60px !important;
+    padding-left: 60px;
+    background: url(https://static-cdn.jtvnw.net/emoticons/v1/1802011/3.0) no-repeat;
+    background-size: 60px;
+    background-position: center;
+}
+
+#article-content-wrapper #article-content img[alt='suvelyInterrogation'],
+img[alt='suvelyInterrogation'] {
+    width: 60px;
+    height: 60px !important;
+    padding-left: 60px;
+    background: url(https://static-cdn.jtvnw.net/emoticons/v1/1802014/3.0) no-repeat;
+    background-size: 60px;
+    background-position: center;
+}
+
+#article-content-wrapper #article-content img[alt='suvelySUARY'],
+img[alt='suvelySUARY'] {
+    width: 60px;
+    height: 60px !important;
+    padding-left: 60px;
+    background: url(https://static-cdn.jtvnw.net/emoticons/v1/643815/3.0) no-repeat;
+    background-size: 60px;
+    background-position: center;
+}
+
+#article-content-wrapper #article-content img[alt='suvelyGeunyang'],
+img[alt='suvelyGeunyang'] {
+    width: 60px;
+    height: 60px !important;
+    padding-left: 60px;
+    background: url(https://static-cdn.jtvnw.net/emoticons/v1/1802032/3.0) no-repeat;
+    background-size: 60px;
+    background-position: center;
+}
 
 
 
