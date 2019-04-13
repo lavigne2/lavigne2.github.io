@@ -370,11 +370,11 @@ header.nav-up {
 /*이모티콘 팝업*/
 .fr-popup .fr-emoticon,
 .fr-popup .fr-emoticon img {
-    width: 30px !important;
-    height: 30px !important;
+    width: 20px !important;
+    height: 20px !important;
 }
 .fr-popup.emoticons{
-    width: 400px;
+    width: 270px;
 }
 .fr-popup.emoticons br{
     display: none;
