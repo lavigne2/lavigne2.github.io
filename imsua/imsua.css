@@ -349,9 +349,11 @@ header #right-search-form > #right-search-btn:after{
     display: block;
     width: 20px;
     height: 20px;
-    
 }
-
+/*방문페이지*/
+#article-list>.article-list-row>.item>.list-title>a:visited{
+    color: #888 !important;
+}
 
 /*-------------------애니메이션-------------------*/
 #article-list > .article-list-row{
