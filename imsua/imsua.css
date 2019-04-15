@@ -722,12 +722,12 @@ img[alt='suvelySmilingly'] {
     background-position: center;
 }
 
-#article-content-wrapper #article-content img[alt='suvelyInterrogation'],
-img[alt='suvelyInterrogation'] {
+#article-content-wrapper #article-content img[alt='suvelyConcert'],
+img[alt='suvelyConcert'] {
     width: 60px;
     height: 60px !important;
     padding-left: 60px;
-    background: url(https://static-cdn.jtvnw.net/emoticons/v1/1802014/3.0) no-repeat;
+    background: url(https://static-cdn.jtvnw.net/emoticons/v1/2093519/3.0) no-repeat;
     background-size: 60px;
     background-position: center;
 }
