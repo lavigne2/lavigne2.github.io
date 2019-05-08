@@ -1,0 +1,820 @@
+@font-face { font-family: 'WONDotum'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/WONDotum.woff') format('woff'); font-weight: normal; font-style: normal; }
+body {
+    font-family: 'WONDotum';
+    padding-top: 0;
+}
+body,html {
+    background-color: white;
+}
+
+/*-------------------컬러-------------------*/
+:root {
+    --color1: #FED76D;
+    --color2: #F26754;
+    --color3: #fff2cf;
+    --color4: #f5f5f5;
+    --color5: white;
+    --color6: #666666;
+}
+
+header > #header-search-bar #header-search-input {
+    padding: 6px 8px;
+    font-size: 16px;
+    border: 2px solid var(--color1);
+    flex: 1;
+}
+header > #header-search-bar #header-search-btn {
+    border: none;
+    background: transparent;
+    color: var(--color1);
+    font-size: 24px;
+    font-weight: bold;
+    width: 54px;
+    margin-top: -1px;
+}
+nav#nav {
+    background: var(--color3);
+}
+nav#nav > .nav-header {
+    margin-top: 12px;
+    background: var(--color1);
+    color: #fff;
+    padding: 6px 12px;
+}
+#header-top-notice strong.notice-badge {
+    background: var(--color1);
+    padding: 4px 8px;
+    color: #fff;
+    font-weight: bold;
+}
+#article-list > .article-list-row > .item > a.list-title > .list-writer.logged > span {
+    color: var(--color1);
+    font-weight: bold;
+}
+nav#nav > .nav-menu-area hr {
+    border-bottom-color: var(--color2);
+}
+footer {
+    background-color: white;
+}
+.badge{
+    background-color: var(--color1);
+}
+
+#main .menu-wrapper > a > em {
+    color: var(--color2);
+    text-decoration: none;
+    font-style: normal;
+    width: 24px;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+}
+#article-list > .article-list-row > .item > .list-title > .list-category {
+    border-left: 1px solid var(--color2);
+    border-right: 1px solid var(--color2);
+}
+#article-list > .article-list-row > .item > .list-title > .list-writer {
+    border-left: 1px solid var(--color2);
+    border-right: 1px solid var(--color2);
+}
+#article-list > .article-list-row {
+    border-right: 0;
+}
+#article-list > .article-list-row > .item > .list-checkbox,
+#article-list > .article-list-row > .item > .list-header,
+#article-list > .article-list-row > .item > .list-category,
+#article-list > .article-list-row > .item > .list-title,
+#article-list > .article-list-row > .item > .list-blocked,
+#article-list > .article-list-row > .item > .list-time {
+    border-bottom: 2px dashed var(--color2);
+}
+#article-list > .article-list-row.hot {
+    background: #f26754;
+    background: -moz-linear-gradient(-45deg, #f26754 1%, #fed76d 25%, #f26754 50%, #fed76d 75%, #f26754 100%);
+    background: -webkit-linear-gradient(-45deg, #f26754 1%,#fed76d 25%,#f26754 50%,#fed76d 75%,#f26754 100%);
+    background: linear-gradient(135deg, #f26754 1%,#fed76d 25%,#f26754 50%,#fed76d 75%,#f26754 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f26754', endColorstr='#f26754',GradientType=1 );
+    background-size: 500% 500%;
+    border: 0;
+    border-radius: 3px;
+    animation: headerGradient 15s infinite ease-in-out;
+    -webkit-animation: headerGradient 15s infinite ease-in-out;
+    -moz-animation: headerGradient 15s infinite ease-in-out;
+    -o-animation: headerGradient 15s infinite ease-in-out;
+}
+#article-list > .article-list-row.notice {
+    background-color: var(--color3);
+}
+#article-list #article-list-category > a {
+    background-color: white;
+}
+#board-info > a.board-right-menu, #board-info > h1 > a, #board-info #viewers-area {
+    color: var(--color1);
+}
+#article-list > .article-list-row > .item > a.list-title > small.comment-count {
+    color: var(--color1);
+}
+#article-list > .article-list-row > .item > .list-header > span {
+    background-color: var(--color1);
+}
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    background-color: var(--color2);
+    border-color: var(--color2);
+}
+.pagination > li > a, .pagination > li > span {
+    color: var(--color1);
+}
+
+
+/*--------------------레이아웃--------------------*/
+header {
+    height: 135px;
+    border-bottom: 0;
+    background-color: white;
+}
+#header-area {
+    position: relative;
+    top: 90px;
+}
+#header-area:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: url(https://lavigne2.github.io/banharu/haru_banner.png) no-repeat;
+    background-size: 241px 208px;
+    top: -100px;
+    left: -20px;
+    background-position: center;
+}
+#header-area {
+    margin-bottom: 50px;
+    background: #f26754;
+    background: -moz-linear-gradient(-45deg, #f26754 1%, #fed76d 25%, #f26754 50%, #fed76d 75%, #f26754 100%);
+    background: -webkit-linear-gradient(-45deg, #f26754 1%,#fed76d 25%,#f26754 50%,#fed76d 75%,#f26754 100%);
+    background: linear-gradient(135deg, #f26754 1%,#fed76d 25%,#f26754 50%,#fed76d 75%,#f26754 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f26754', endColorstr='#f26754',GradientType=1 );
+    background-size: 600% 600%;
+    border: 0;
+    border-radius: 3px;
+    animation: headerGradient 10s infinite ease-in-out;
+    -webkit-animation: headerGradient 10s infinite ease-in-out;
+    -moz-animation: headerGradient 10s infinite ease-in-out;
+    -o-animation: headerGradient 10s infinite ease-in-out;
+}
+#header-top-notice {
+    margin-top: 133px;
+}
+header > #header-area > a > h1 {
+    width: 120px;
+    height: 42px;
+    background: url(https://lavigne2.github.io/banharu/banana_logo.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#board-info {
+    border-top: 1px dashed var(--color2);
+    border-bottom: 1px dashed var(--color2);
+}
+#board-info > a.board-right-menu {
+    padding: 12px 7px;
+}
+
+
+/*아이콘*/
+header > #header-area > #header-bar-link,
+header > #header-area > #header-search-link {
+    color: white;
+}
+nav#nav > #nav-upper > #header-close-bar-link,
+nav#nav > #nav-upper #noteDropdownContainer a, nav#nav > #nav-upper #userDropdownContainer a {
+    color: var(--color1);
+}
+
+
+/*인 메뉴*/
+#article-content-wrapper>.header,
+#article-reply-area #reply-real-area .reply > .reply-header, #article-reply-area #reply-best-area .reply>.reply-header {
+    background: var(--color2);
+}
+.fr-toolbar,
+#article-content-wrapper>.header {
+    border-top: 2px solid var(--color2);
+}
+#article-reply-area #reply-real-area .reply, #article-reply-area #reply-best-area .reply {
+    border: 2px dashed var(--color2);
+}
+.fr-box fr-ltr fr-basic fr-top {
+    border: 2px dashed var(--color2);
+}
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged, #article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged {
+    color: #555555;
+}
+#reply-real-area a {
+    color: #555555;
+}
+
+/*댓글*/
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged, #article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged{
+    color: #555555;
+}
+
+/*댓글*/
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer, #article-reply-area #reply-best-area .reply>.reply-header>.reply-writer,
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged, #article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged{
+    color: white;
+}
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-menu a, #article-reply-area #reply-best-area .reply > .reply-header > .reply-menu a{
+    color: white;
+}
+.btn-outline-success,.btn-primary{
+    color: var(--color5);
+    background-color: var(--color2);
+    border-color: var(--color2);
+}
+.btn-outline-success:hover,.btn-primary:hover{
+    background-color: var(--color1);
+    border-color: var(--color1);
+}
+#article-reply-area > .header h5{
+    color: #333333;
+}
+
+
+
+
+/*--------------------애니메이션--------------------*/
+/*네비*/
+#nav {
+    transition: 0.5s ease-in-out;
+}
+#nav.hide {
+    display: block !important;
+    width: 0 !important;
+}
+#nav-overlay.hide {
+    display: block !important;
+    width: 0;
+    opacity: 0;
+}
+#nav-overlay {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+#nav>* {
+    width: 300px;
+}
+
+/*헤더*/
+header.nav-up {
+    top: -94px;
+    position: fixed !important;
+}
+
+
+/*???*/
+#article-list > .article-list-row {
+    transition-duration: 0.25s;
+}
+#article-list>.article-list-row:hover, #article-list>.article-list-row:focus {
+    background-color: var(--color3);
+    transform: scale(1.01);
+}
+.dropdown .dropdown-menu, .input-group-btn .dropdown-menu {
+    display: block !important;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: 0% 0%;
+    transition: all 0.4s cubic-bezier(.27, 1.47, .09, 1.06);
+    padding: 3px 0;
+}
+#header-menu-right .dropdown-menu {
+    transform-origin: 100% 0;
+}
+.dropdown.open .dropdown-menu, .input-group-btn.open .dropdown-menu {
+    opacity: 1;
+    transform: unset;
+    border: 2px solid var(--color2);
+}
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a {
+    transition-duration: 0.25s;
+}
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+    color: var(--color1);
+    background-color: var(--color3);
+    transform: scale(1.03);
+}
+.fa-heart {
+    animation: heart 2s infinite;
+    transform: scale(1);
+}
+@keyframes headerGradient {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+}
+@-webkit-keyframes headerGradient {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+}
+@-moz-keyframes headerGradient {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+}
+@-o-keyframes headerGradient {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+}
+@keyframes heart {
+    0%,100% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.2);
+        color: var(--color1);
+    }
+    90% {
+        transform: scale(0.9);
+    }
+}
+@-moz-keyframes heart {
+    0%,100% {
+        transform: scale(1);
+    }
+    70% {
+        transform: scale(1.2);
+        color: var(--color1);
+    }
+    90% {
+        transform: scale(0.9);
+    }
+}
+
+@-o-keyframes heart {
+    0%,100% {
+        transform: scale(1);
+    }
+    70% {
+        transform: scale(1.2);
+        color: var(--color1);
+    }
+    90% {
+        transform: scale(0.9);
+    }
+}
+
+@-webkit-keyframes heart {
+    0%,100% {
+        transform: scale(1);
+    }
+    70% {
+        transform: scale(1.2);
+        color: var(--color1);
+    }
+    90% {
+        transform: scale(0.9);
+    }
+}
+
+
+/*-------------------이모티콘-------------------*/
+/*이모티콘 팝업*/
+.fr-popup .fr-emoticon,
+.fr-popup .fr-emoticon img {
+    width: 20px !important;
+    height: 20px !important;
+}
+.fr-popup.emoticons{
+    width: 270px;
+}
+.fr-popup.emoticons br{
+    display: none;
+}
+
+/*구독티콘*/
+/* 움짤티콘 */
+        #article-content-wrapper #article-content img[alt='bbuingShotgun'],
+        img[alt='bbuingShotgun'] {
+            width: 60px;
+            height: 60px !important;
+            padding-left: 60px;
+            background: url(https://static-cdn.jtvnw.net/emoticons/v1/1250778/3.0) no-repeat;
+            background-size: 60px;
+            background-position: center;
+        }
+
+        #article-content-wrapper #article-content img[alt='JKanStyle'],
+        img[alt='JKanStyle'] {
+            width: 100px;
+            height: 100px !important;
+            padding-left: 100px;
+            background: url(https://lavigne2.github.io/banharu/emote_1.gif) no-repeat;
+            background-size: 120px;
+            background-position: center;
+        }
+
+        span[data-param1='JKanStyle']:hover>img,
+        span[data-param1='JKanStyle']>img {
+            width: 30px;
+            height: 30px;
+            padding-top: 30px;
+            padding-left: 30px;
+            background: url(https://lavigne2.github.io/banharu/emote_1.gif) no-repeat;
+            background-size: 45px;
+            background-position: center;
+        }
+
+        #article-content-wrapper #article-content img[alt='OptimizePrime'],
+        img[alt='OptimizePrime'] {
+            width: 100px;
+            height: 100px !important;
+            padding-left: 100px;
+            background: url(https://lavigne2.github.io/banharu/emote_2.gif) no-repeat;
+            background-size: 120px;
+            background-position: center;
+        }
+
+        span[data-param1='OptimizePrime']:hover>img,
+        span[data-param1='OptimizePrime']>img {
+            width: 30px;
+            height: 30px;
+            padding-top: 30px;
+            padding-left: 30px;
+            background: url(https://lavigne2.github.io/banharu/emote_2.gif) no-repeat;
+            background-size: 45px;
+            background-position: center;
+        }
+
+        #article-content-wrapper #article-content img[alt='StoneLightning'],
+        img[alt='StoneLightning'] {
+            width: 100px;
+            height: 100px !important;
+            padding-left: 100px;
+            background: url(https://lavigne2.github.io/banharu/emote_3.gif) no-repeat;
+            background-size: 120px;
+            background-position: center;
+        }
+
+        span[data-param1='StoneLightning']:hover>img,
+        span[data-param1='StoneLightning']>img {
+            width: 30px;
+            height: 30px;
+            padding-top: 30px;
+            padding-left: 30px;
+            background: url(https://lavigne2.github.io/banharu/emote_3.gif) no-repeat;
+            background-size: 45px;
+            background-position: center;
+        }
+
+        #article-content-wrapper #article-content img[alt='TheRinger'],
+        img[alt='TheRinger'] {
+            width: 100px;
+            height: 100px !important;
+            padding-left: 100px;
+            background: url(https://lavigne2.github.io/banharu/emote_4.gif) no-repeat;
+            background-size: 120px;
+            background-position: center;
+        }
+
+        span[data-param1='TheRinger']:hover>img,
+        span[data-param1='TheRinger']>img {
+            width: 30px;
+            height: 30px;
+            padding-top: 30px;
+            padding-left: 30px;
+            background: url(https://lavigne2.github.io/banharu/emote_4.gif) no-repeat;
+            background-size: 45px;
+            background-position: center;
+        }
+
+        #article-content-wrapper #article-content img[alt='RedCoat'],
+        img[alt='RedCoat'] {
+            width: 100px;
+            height: 100px !important;
+            padding-left: 100px;
+            background: url(https://lavigne2.github.io/banharu/emote_5.gif) no-repeat;
+            background-size: 120px;
+            background-position: center;
+        }
+
+        span[data-param1='RedCoat']:hover>img,
+        span[data-param1='RedCoat']>img {
+            width: 30px;
+            height: 30px;
+            padding-top: 30px;
+            padding-left: 30px;
+            background: url(https://lavigne2.github.io/banharu/emote_5.gif) no-repeat;
+            background-size: 45px;
+            background-position: center;
+        }
+
+        #article-content-wrapper #article-content img[alt='Kappa'],
+        img[alt='Kappa'] {
+            width: 100px;
+            height: 100px !important;
+            padding-left: 100px;
+            background: url(https://lavigne2.github.io/banharu/emote_6.gif) no-repeat;
+            background-size: 120px;
+            background-position: center;
+        }
+
+        span[data-param1='Kappa']:hover>img,
+        span[data-param1='Kappa']>img {
+            width: 30px;
+            height: 30px;
+            padding-top: 30px;
+            padding-left: 30px;
+            background: url(https://lavigne2.github.io/banharu/emote_6.gif) no-repeat;
+            background-size: 45px;
+            background-position: center;
+        }
+
+
+        #article-content-wrapper #article-content img[alt='JonCarnage'],
+        img[alt='JonCarnage'] {
+            width: 100px;
+            height: 100px !important;
+            padding-left: 100px;
+            background: url(https://lavigne2.github.io/banharu/emote_7.gif) no-repeat;
+            background-size: 120px;
+            background-position: center;
+        }
+
+        span[data-param1='JonCarnage']:hover>img,
+        span[data-param1='JonCarnage']>img {
+            width: 30px;
+            height: 30px;
+            padding-top: 30px;
+            padding-left: 30px;
+            background: url(https://lavigne2.github.io/banharu/emote_7.gif) no-repeat;
+            background-size: 45px;
+            background-position: center;
+        }
+
+
+        #article-content-wrapper #article-content img[alt='BCWarrior'],
+        img[alt='BCWarrior'] {
+            width: 100px;
+            height: 100px !important;
+            padding-left: 100px;
+            background: url(https://lavigne2.github.io/banharu/emote_8.gif) no-repeat;
+            background-size: 120px;
+            background-position: center;
+        }
+
+        span[data-param1='BCWarrior']:hover>img,
+        span[data-param1='BCWarrior']>img {
+            width: 30px;
+            height: 30px;
+            padding-top: 30px;
+            padding-left: 30px;
+            background: url(https://lavigne2.github.io/banharu/emote_8.gif) no-repeat;
+            background-size: 45px;
+            background-position: center;
+        }
+
+
+        #article-content-wrapper #article-content img[alt='GingerPower'],
+        img[alt='GingerPower'] {
+            width: 100px;
+            height: 100px !important;
+            padding-left: 100px;
+            background: url(https://lavigne2.github.io/banharu/emote_9.gif) no-repeat;
+            background-size: 120px;
+            background-position: center;
+        }
+
+        span[data-param1='GingerPower']:hover>img,
+        span[data-param1='GingerPower']>img {
+            width: 30px;
+            height: 30px;
+            padding-top: 30px;
+            padding-left: 30px;
+            background: url(https://lavigne2.github.io/banharu/emote_9.gif) no-repeat;
+            background-size: 45px;
+            background-position: center;
+        }
+
+
+        #article-content-wrapper #article-content img[alt='DansGame'],
+        img[alt='DansGame'] {
+            width: 100px;
+            height: 100px !important;
+            padding-left: 100px;
+            background: url(https://lavigne2.github.io/banharu/emote_10.gif) no-repeat;
+            background-size: 120px;
+            background-position: center;
+        }
+
+        span[data-param1='DansGame']:hover>img,
+        span[data-param1='DansGame']>img {
+            width: 30px;
+            height: 30px;
+            padding-top: 30px;
+            padding-left: 30px;
+            background: url(https://lavigne2.github.io/banharu/emote_10.gif) no-repeat;
+            background-size: 45px;
+            background-position: center;
+        }
+
+        #article-content-wrapper #article-content img[alt='SwiftRage'],
+        img[alt='SwiftRage'] {
+            width: 100px;
+            height: 100px !important;
+            padding-left: 100px;
+            background: url(https://lavigne2.github.io/banharu/emote_11.gif) no-repeat;
+            background-size: 120px;
+            background-position: center;
+        }
+
+        span[data-param1='SwiftRage']:hover>img,
+        span[data-param1='SwiftRage']>img {
+            width: 30px;
+            height: 30px;
+            padding-top: 30px;
+            padding-left: 30px;
+            background: url(https://lavigne2.github.io/banharu/emote_11.gif) no-repeat;
+            background-size: 45px;
+            background-position: top;
+        }
+
+        #article-content-wrapper #article-content img[alt='PJSalt'],
+        img[alt='PJSalt'] {
+            width: 100px;
+            height: 100px !important;
+            padding-left: 100px;
+            background: url(https://lavigne2.github.io/banharu/emote_12.gif) no-repeat;
+            background-size: 120px;
+            background-position: center;
+        }
+
+        span[data-param1='PJSalt']:hover>img,
+        span[data-param1='PJSalt']>img {
+            width: 30px;
+            height: 30px;
+            padding-top: 30px;
+            padding-left: 30px;
+            background: url(https://lavigne2.github.io/banharu/emote_12.gif) no-repeat;
+            background-size: 45px;
+            background-position: top;
+        }
+
+        #article-content-wrapper #article-content img[alt='KevinTurtle'],
+        img[alt='KevinTurtle'] {
+            width: 100px;
+            height: 100px !important;
+            padding-left: 100px;
+            background: url(https://lavigne2.github.io/banharu/emote_13.gif) no-repeat;
+            background-size: 120px;
+            background-position: center;
+        }
+
+        span[data-param1='KevinTurtle']:hover>img,
+        span[data-param1='KevinTurtle']>img {
+            width: 30px;
+            height: 30px;
+            padding-top: 30px;
+            padding-left: 30px;
+            background: url(https://lavigne2.github.io/banharu/emote_13.gif) no-repeat;
+            background-size: 45px;
+            background-position: top;
+        }
+
+        #article-content-wrapper #article-content img[alt='Kreygasm'],
+        img[alt='Kreygasm'] {
+            width: 100px;
+            height: 100px !important;
+            padding-left: 100px;
+            background: url(https://lavigne2.github.io/banharu/emote_14.gif) no-repeat;
+            background-size: 120px;
+            background-position: center;
+        }
+
+        span[data-param1='Kreygasm']:hover>img,
+        span[data-param1='Kreygasm']>img {
+            width: 30px;
+            height: 30px;
+            padding-top: 30px;
+            padding-left: 30px;
+            background: url(https://lavigne2.github.io/banharu/emote_14.gif) no-repeat;
+            background-size: 45px;
+            background-position: top;
+        }
+
+        #article-content-wrapper #article-content img[alt='SSSsss'],
+        img[alt='SSSsss'] {
+            width: 100px;
+            height: 100px !important;
+            padding-left: 100px;
+            background: url(https://lavigne2.github.io/banharu/emote_15.gif) no-repeat;
+            background-size: 120px;
+            background-position: center;
+        }
+
+        span[data-param1='SSSsss']:hover>img,
+        span[data-param1='SSSsss']>img {
+            width: 30px;
+            height: 30px;
+            padding-top: 30px;
+            padding-left: 30px;
+            background: url(https://lavigne2.github.io/banharu/emote_15.gif) no-repeat;
+            background-size: 45px;
+            background-position: top;
+        }
+
+        #article-content-wrapper #article-content img[alt='PunchTrees'],
+        img[alt='PunchTrees'] {
+            width: 100px;
+            height: 100px !important;
+            padding-left: 100px;
+            background: url(https://lavigne2.github.io/banharu/emote_16.gif) no-repeat;
+            background-size: 120px;
+            background-position: center;
+        }
+
+        span[data-param1='PunchTrees']:hover>img,
+        span[data-param1='PunchTrees']>img {
+            width: 30px;
+            height: 30px;
+            padding-top: 30px;
+            padding-left: 30px;
+            background: url(https://lavigne2.github.io/banharu/emote_16.gif) no-repeat;
+            background-size: 45px;
+            background-position: top;
+        }
+
+        #article-content-wrapper #article-content img[alt='ArsonNoSexy'],
+        img[alt='ArsonNoSexy'] {
+            width: 100px;
+            height: 100px !important;
+            padding-left: 100px;
+            background: url(https://lavigne2.github.io/banharu/emote_17.gif) no-repeat;
+            background-size: 120px;
+            background-position: center;
+        }
+
+        span[data-param1='ArsonNoSexy']:hover>img,
+        span[data-param1='ArsonNoSexy']>img {
+            width: 30px;
+            height: 30px;
+            padding-top: 30px;
+            padding-left: 30px;
+            background: url(https://lavigne2.github.io/banharu/emote_17.gif) no-repeat;
+            background-size: 45px;
+            background-position: top;
+        }
+
+        #article-content-wrapper #article-content img[alt='bbuingHi'],
+        img[alt='bbuingHi'] {
+            width: 60px;
+            height: 60px !important;
+            padding-left: 60px;
+            background: url(https://lavigne2.github.io/banharu/emote_18.png) no-repeat;
+            background-size: 60px;
+            background-position: center;
+        }
+
+        span[data-param1='bbuingHi']:hover>img,
+        span[data-param1='bbuingHi']>img {
+            width: 30px;
+            height: 30px;
+            padding-top: 30px;
+            padding-left: 30px;
+            background: url(https://lavigne2.github.io/banharu/emote_18.png) no-repeat;
+            background-size: 30px;
+            background-position: top;
+        }
+
+        .fr-command.fr-emoticon>img,
+        .fr-command.fr-emoticon {
+            width: 30px !important;
+            height: 30px !important;
+        }
+
+
+
+
+
+
+
