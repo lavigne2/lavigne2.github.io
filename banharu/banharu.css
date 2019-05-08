@@ -382,6 +382,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f26754', end
     background-color: var(--color1);
     border-color: var(--color1);
 }
+img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
+    display: none;
+}
 
 /*아이콘*/
 header #right-search-form > #right-search-btn:after{
