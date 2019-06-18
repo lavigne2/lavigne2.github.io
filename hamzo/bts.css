@@ -31,6 +31,7 @@ html {
     background: linear-gradient(45deg, #fdc8a8 10%, #e8a3c0 30%, #c2a9d0 70%, #a9c0e2 90%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdc8a8', endColorstr='#a9c0e2', GradientType=1);
     background-attachment: fixed;
+    background-repeat: no-repeat;
     height: auto;
 }
 
