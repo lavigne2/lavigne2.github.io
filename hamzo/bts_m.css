@@ -277,3 +277,9 @@ nav#nav.hide {
 #article-reply-area #reply-real-area .reply > .reply-header>small.code{
     color: white;
 }
+
+
+/* 부관리자 아이콘 제거 */
+img[alt="Moderator"] {
+    display: none;
+}
