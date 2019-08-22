@@ -111,3 +111,9 @@
 }
 
 /* 모바일 header 위치 끝 */
+
+/* 썸네일에서 SELECT OPTION, 하트 없애기 */
+.functional-buttons{
+    display: none;
+}
+/* 썸네일에서 SELECT OPTION, 하트 없애기 끝*/
