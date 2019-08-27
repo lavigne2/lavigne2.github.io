@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /* 슬라이드 메뉴 만들기 */
 
 .accordion0 {
@@ -102,12 +104,13 @@
 /* 슬라이드 메뉴 줄간격 줄이기 끝 */
 
 /* 모바일 header 위치 */
-
-#header_logo {
-    padding: 0;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+@media (max-width:500px){
+    #header_logo {
+        padding: 0;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
 }
 
 /* 모바일 header 위치 끝 */
