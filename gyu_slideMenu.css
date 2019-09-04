@@ -81,14 +81,29 @@
     border-bottom: 0;
 }
 
-.vertical0 ul li .content {
-    height: 0px;
-    border-top: 0;
+/* 줄간격 */
+.accordion0 p {
+	line-height: 20px;
 }
 
-.vertical0 [type=radio]:checked ~ label ~ .content,.vertical0 [type=checkbox]:checked ~ label ~ .content {
-    height: 200px;
-    border-bottom: 1px solid #b1b1b1;
+/* description height auto로 설정 */
+.vertical0 ul li .content {
+	height: initial;
+    max-height: 0px;
+}
+.vertical0 [type=checkbox]:checked ~ label ~ .content {
+	height: initial;
+    max-height: 500px;
+}
+
+/* description Detail Size 높이 */
+.vertical0 li:nth-child(2) [type=checkbox]:checked ~ label ~ .content {
+	height: initial;
+}
+
+.accordion0 .content {
+	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
 }
 
 /* 슬라이드 메뉴 만들기 끝 */
@@ -104,7 +119,7 @@
 /* 슬라이드 메뉴 줄간격 줄이기 끝 */
 
 /* 모바일 header 위치 */
-@media (max-width:500px){
+@media (max-width:500px) {
     #header_logo {
         padding: 0;
         position: absolute;
