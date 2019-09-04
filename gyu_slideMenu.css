@@ -51,7 +51,7 @@
 .accordion0 .content {
     padding: 0 10px;
     overflow: hidden;
-    font-size: 11px;
+    font-size: 12px;
     border-bottom: 0px solid #b1b1b1;
     -webkit-transition: all .5s ease-out;
     -moz-transition: all .5s ease-out;
@@ -93,7 +93,7 @@
 }
 .vertical0 [type=checkbox]:checked ~ label ~ .content {
 	height: initial;
-    max-height: 220px;
+    max-height: 500px;
 }
 
 /* description Detail Size 높이 */
