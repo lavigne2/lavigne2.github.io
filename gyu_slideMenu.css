@@ -93,7 +93,7 @@
 }
 .vertical0 [type=checkbox]:checked ~ label ~ .content {
 	height: initial;
-    max-height: 500px;
+    max-height: 220px;
 }
 
 /* description Detail Size 높이 */
@@ -108,11 +108,6 @@
 
 /* 슬라이드 메뉴 만들기 끝 */
 
-
-/* 슬라이드 메뉴 줄간격 줄이기 */
-#center_column > div > div.primary_block > div.row > div.product-center-column.col-xs-12.col-sm-12.col-md-6 > div.product-description.rte > div > ul > li:nth-child(2) > div > p{
-    line-height: 10px;
-}
 /* .vertical0 [type=radio]:checked ~ label ~ li:nth-child(2) .content, .vertical0 [type=checkbox]:checked ~ label ~ li:nth-child(2) .content{
     height: 250px;
 } */
