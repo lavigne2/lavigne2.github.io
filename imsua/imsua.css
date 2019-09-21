@@ -199,6 +199,11 @@ header #header-bar #header-menu-right {
     background-color: var(--color1);
 }
 
+#main .menu-wrapper a.schedule-link:first-child {
+    border: 0;
+    background: transparent;
+}
+
 
 /* ---------- 좌측 메뉴 끝 ---------- */
 
