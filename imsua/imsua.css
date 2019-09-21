@@ -287,16 +287,20 @@ header #header-bar #header-menu-right {
     transition-duration: 0.4s;
 }
 
-#article-list #article-list-category > a:nth-child(2n-1):hover {
-    background: linear-gradient(65deg, white 20%, var(--color1) 100%);
-    background-size: 300% 100%;
-    background-position: 100% 100%;
+#article-list #article-list-category > a:nth-child(2n-1) {
+    background: linear-gradient(90deg, var(--color1) 39%, white 40%);
+    background-size: 500%;
+    background-position: 50% 50%;
 }
 
-#article-list #article-list-category > a:nth-child(2n):hover {
-    background: linear-gradient(65deg, white 20%, var(--color5) 100%);
-    background-size: 300% 100%;
-    background-position: 100% 100%;
+#article-list #article-list-category > a:nth-child(2n) {
+    background: linear-gradient(90deg, var(--color5) 39%, white 40%);
+    background-size: 500%;
+    background-position: 50% 50%;
+}
+
+#article-list #article-list-category > a:hover {
+    background-position: 0% 50%;
 }
 
 .fa-home:before {
