@@ -15,16 +15,21 @@ body {
 
 /* ---------- 컬러 ---------- */
 :root {
-    --color1: #cf3c2c;
-    --color2: #ffe1a2;
-    --color3: #fef2c7;
-    --color4: #feaa6e;
-    --color5: #fe8c3b;
+    --color1: #4E6E8F ;
+    --color2: #70ABD6 ;
+    --color3: #A4CDE9 ;
+    --color4: #D1E4F2 ;
+    --color5: #F6FAFD ;
 }
 
 html,
 body {
-    background: #fff0dc;
+    background: #d2e3f5;
+    background: -moz-linear-gradient(-45deg,  #d2e3f5 0%, #f6fafd 38%, #f6fafd 61%, #cbebff 99%);
+    background: -webkit-linear-gradient(-45deg,  #d2e3f5 0%,#f6fafd 38%,#f6fafd 61%,#cbebff 99%);
+    background: linear-gradient(135deg,  #d2e3f5 0%,#f6fafd 38%,#f6fafd 61%,#cbebff 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2e3f5', endColorstr='#cbebff',GradientType=1 );
+
     height: auto;
     overflow-x: hidden;
 }
@@ -44,7 +49,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    background: url(https://lavigne2.github.io/imsua/images/leaf_1.png) no-repeat;
+    /*background: url(https://lavigne2.github.io/imsua/images/leaf_1.png) no-repeat;*/
     background-size: contain;
 }
 
@@ -56,12 +61,12 @@ header::before {
     position: absolute;
     top: 0;
     left: 0;
-    background: url(https://lavigne2.github.io/imsua/images/leaf_2.png) no-repeat;
+    /*background: url(https://lavigne2.github.io/imsua/images/leaf_2.png) no-repeat;*/
     background-size: contain;
 }
 
 footer {
-    background: url(https://lavigne2.github.io/imsua/images/autumn_bg.png);
+    /*background: url(https://lavigne2.github.io/imsua/images/autumn_bg.png);*/
 }
 
 /* ---------- 나뭇잎 끝 ---------- */
@@ -330,7 +335,7 @@ header #header-bar #header-menu-right {
 }
 
 #article-list > .article-list-row.hot:hover {
-    background: var(--color5);
+    background: var(--color2);
     color: white;
 }
 
@@ -397,7 +402,7 @@ header #header-bar #header-menu-right {
 }
 
 .fa-heart:before {
-    color: var(--color5);
+    color: var(--color2);
 }
 
 /* 게시판 하단 */
@@ -586,24 +591,22 @@ header #header-bar:before {
     position: absolute;
     top: 0px;
     left: 20px;
-    background: linear-gradient(90deg, #ffe1a2 20%, #cf3c2c 40% 60%, #ffe1a2 80%);
-    background-size: 200% 100%;
-    animation: lineMove 3s infinite linear;
+    background-color: var(--color4);
 }
 
 .col-xs-2 .menu-wrapper,
 .col-xs-10 .frame {
-    box-shadow: 6px 6px var(--color1);
+    box-shadow: 6px 6px var(--color4);
 }
 
 /* ---------- 그림자 끝 ---------- */
 
 /* footer */
 footer a {
-    color: white;
+    color: var(--color1);
 }
 footer a:hover {
-    color: #ffeb00;
+    color: var(--color3);
 }
 /* footer 끝 */
 
