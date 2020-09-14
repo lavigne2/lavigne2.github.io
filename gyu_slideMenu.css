@@ -73,10 +73,6 @@
     margin: 0 0 0px;
 }
 
-.vertical0 ul li label {
-    padding: 5px;
-}
-
 .vertical0 [type=radio]:checked ~ label,.vertical0 [type=checkbox]:checked ~ label {
     border-bottom: 0;
 }
