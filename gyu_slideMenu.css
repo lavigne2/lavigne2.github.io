@@ -89,7 +89,7 @@
 }
 .vertical0 [type=checkbox]:checked ~ label ~ .content {
 	height: initial;
-    max-height: 300px;
+    max-height: 600px;
 }
 
 /* description Detail Size 높이 */
